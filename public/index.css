@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 250px;
+  background-size: 100% 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  z-index: -1;
+}
+.header, .sub-header {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+.sub-header{
+  top: 21%;
+  font-size: 1.5rem;
+  font-family: 'Newsreader', serif;
+}
+.nav{
+ margin-top: -23%;
+ margin-right: 25%;
+ width: 50%;
+
+}
+a.btn{
+  position: absolute;
+  top: 31%;
+  left: 33%;
+  background-color: #fff;
+  color: #ff3f57;
+  font-family: 'Texturina', serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-radius: 5px;
+
+}
+
+.logo{
+  position: relative;
+  top: 55px;
+  left: 125px;
+  width: 90%;
+  height: 190px;
+  background-size: 50% 150px;
+  background-repeat: no-repeat;
+}
+.MuiButton-label span {
+  color: white;
+  position: absolute;
+  display: none;
+}
+.MuiButton-label:after {
+  color: white;
+  position: absolute;
+  content: 'CoderKachi';
+  left: 20%;
+  font-family: 'Texturina', serif; 
+  font-size: 1.5rem ;
+  font-weight: bolder;
+  color: #fff
+}
+.my-details, .drawer-list{
+  background-color: #fff;
+}
+.my-details{
+  color: #fff;
+  background-color: #ff3f57;
+  text-align: center;
+  font-family: 'Texturina', serif;
+  font-size: 1.5rem;
+}
+#divider{
+  color: #ff3f57;
+  background-color: #ff3f57;
+}
+.link-two{
+  text-decoration: none;
+  color: #ff3f57;
+  font-family: 'Texturina', serif; 
+  font-weight: 900;
+}
+
+/*----------------------------------------- About Section----------------------------------------------*/
+
+.about{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Texturina', serif;
+  font-weight: 600;
+}
+#about-img{
+  width: 25%;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px double black;
+  position: absolute;
+  left: 73%;
+  bottom: 75%;
+}
+#info {
+  color: #ff3f57;
+  font-size: 5rem;
+  width: 50%;
+}
+#about-text{
+  color: #ff3f57;
+  background-color: white;
+  position: absolute;
+  top: 37%;
+  left: 20%;
+  font-family: 'Goblin One', cursive;
+
+}
+td{
+  background-color: white;
+  border: none;
+}
+#about-words {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  color: #ff3f57;
+  text-align: center;
+  font-family: 'Newsreader', serif;
+  font-weight: bolder;
+  line-height: 1.5;
+  width: 95%;
+}
+
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Goblin One', cursive;
+font-family: 'Newsreader', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Texturina', serif; 
+*/
