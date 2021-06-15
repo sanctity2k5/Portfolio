@@ -148,6 +148,55 @@ td{
   width: 95%;
 }
 
+/*-------------------------------------Web Technology Section-------------------------------------*/
+
+.webTechIcons, .front{
+  position: absolute;
+  bottom: 15%;
+  color: #fff;
+  width: 100%;
+  background-color: #ff3f57;
+}
+#webTechIconOne, #webTechIconTwo, .webTechTitle{
+  position: absolute;
+  font-size: 1.7rem;
+  
+
+}
+#webTechIconOne{
+    right: 90%;
+    top: 55%;
+}
+#webTechIconTwo{
+  right: 1%;
+  top: 55%;
+}
+.webTechTitle, .front{
+  background-color: #ff3f57;
+  width: 100%;
+  text-align: center;
+  font-family: 'Goblin One', cursive;
+}
+.front{
+  top: 97%;
+  z-index: 2;
+  color: #ff3f57;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.media{
+  position: absolute;
+  top: 120%;
+  background-color: #ff3f57;
+}
+
+.mediaBody{
+  color: #fff;
+}
+hr{
+  color: #fff;
+}
+
 
 /* font-family: 'Dancing Script', cursive;
 font-family: 'Goblin One', cursive;

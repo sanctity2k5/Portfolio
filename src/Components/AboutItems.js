@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import BeenhereSharpIcon from '@material-ui/icons/BeenhereSharp';
+import TextAnimation from 'react-animate-text';
+
 
 
 class AboutItems extends Component{
@@ -17,7 +19,7 @@ class AboutItems extends Component{
 
                 <tr>
                     <td colspan = "2" bgcolor = "#000">
-                        <h3 id = "about-text">About Me!</h3>
+                        <h3 id = "about-text">{this.props.aboutTitle}</h3>
                     </td>
                 </tr>
             </td>
@@ -27,12 +29,12 @@ class AboutItems extends Component{
                                         {/* About me Write-up */}
             
             <div id = "about-words">
-            <b>Dedicated full-stack web developer with three years of experience in frontend development.
-            Proficient use of React.js framework for frontend and Mongodb for backend.
-             Strong creative and analytical skills. 
-                    Team player with an eye for detail. React and Mongodb.
-                </b>
+            <TextAnimation charInterval = "0">
+            <b>{this.props.aboutWriteUp}</b>
+                </TextAnimation>
             </div>
+
+            
             
             
            

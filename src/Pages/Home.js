@@ -6,9 +6,8 @@ import poster from '../Portfolios/background-poster.png';
 
 import Header from '../Components/Header';
 import Links from '../Components/Links';
-
-//Pages
 import About from '../Pages/About';
+import WebTech from '../Components/WebTech';
 // import image from '../Portfolios/Kachi-logo.jpg';
 
 class Home extends Component{
@@ -23,6 +22,7 @@ class Home extends Component{
                  buttonText = "Tell me more"
             />
             <About />
+            <WebTech />
             
            
 
