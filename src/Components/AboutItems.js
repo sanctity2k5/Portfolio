@@ -1,44 +1,68 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import BeenhereSharpIcon from '@material-ui/icons/BeenhereSharp';
-import TextAnimation from 'react-animate-text';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Animated } from "react-animated-css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 
 
-class AboutItems extends Component{
-    render(){
-        return(
-            <div className = "about">
-            <table width = "100%">
-            <td bgcolor = "#eee" width = "100" height = "200">
-                <img id = "about-img" src= {this.props.img} alt = "my-img" /> 
-            </td>
-             <BeenhereSharpIcon id = "info"/>
-                
-                <tr valign = "top">
-                <td bgcolor = "#aaa" width = "50">
 
-                <tr>
-                    <td colspan = "2" bgcolor = "#000">
-                        <h3 id = "about-text">{this.props.aboutTitle}</h3>
-                    </td>
-                </tr>
-            </td>
-            </tr>
-            </table>
+class AboutItems extends Component {
+    render() {
+        return (
+            <div>
+                <Row>
+                    <Col lg = {12} className="info">
+                    <Animated animationIn="bounce" animationOut="fadeOut" isVisible={true}>
+                        <BeenhereSharpIcon id="info" />
+                        <div id="about-title">
+                            <b>{this.props.aboutTitle}</b>
+                        </div>
+                        </Animated>
+                    </Col>
 
-                                        {/* About me Write-up */}
-            
-            <div id = "about-words">
-            <TextAnimation charInterval = "0">
-            <b>{this.props.aboutWriteUp}</b>
-                </TextAnimation>
-            </div>
+                     {/* About me Write-up */}
 
-            
-            
-            
-           
+                     <Col>
+                    
+                    <div id="about-words">
+                        <b>{this.props.aboutWriteUp}</b>
+                    </div>
+                </Col>
 
+
+
+                  
+                    <Col lg = {6} className = "bulb-1">
+                    <FontAwesomeIcon icon={faLightbulb} rotation={180} color = "orange" size="10x"/>
+                    <FontAwesomeIcon icon={faLightbulb}  color = "orange" size="5x"/>
+                    </Col>
+
+                    <Col lg = {3} className = "bulb-2">
+                    <FontAwesomeIcon icon={faLightbulb} rotation={180} color = "orange" size="5x"/>
+                    <FontAwesomeIcon icon={faLightbulb}  color = "orange" size="8x"/>
+                    </Col>
+
+                    <Col lg = {6} className = "bulb-3">
+                    <FontAwesomeIcon icon={faLightbulb} rotation={180} color = "orange" size="5x"/>
+                    <FontAwesomeIcon icon={faLightbulb}  color = "orange" size="8x"/>
+                    </Col>
+
+                    <Col lg = {3} className = "bulb-4">
+                    <FontAwesomeIcon icon={faLightbulb} rotation={180} color = "orange" size="5x"/>
+                    <FontAwesomeIcon icon={faLightbulb}  color = "orange" size="8x"/>
+                    </Col>
+                    
+                    
+
+
+                   
+
+
+                </Row>
             </div>
         )
     }

@@ -1,55 +1,82 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import WebTechItems from './WebTechItems';
+import htmlImg from '../Portfolios/html css js.jpeg';
+import reactImg from '../Portfolios/React.png';
+import materialImg from '../Portfolios/Material Ui.png';
+import bootstrapImg from '../Portfolios/bootstrap-stack.png';
+import mernImg from '../Portfolios/Mern.jpeg';
+import apiImg from "../Portfolios/What-is-an-API.png";
+import githubImg from "../Portfolios/github.png";
+import responsiveImg from "../Portfolios/responsive.jpeg";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
-import Media from 'react-bootstrap/Media';
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'
+
+
+
+
+
+const webTechs = [
+    { img: htmlImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: reactImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: materialImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: bootstrapImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: mernImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: apiImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: githubImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+    { img: responsiveImg, cardText: "Over two years of experience and proficiency in the use of Html, Css and JavaScript", id: "card-img", },
+
+    
+]
+
+
+
 
 class WebTech extends Component {
-    render(){
-        return(
-            <div>
-            <div className = "webTechIcons">
-            <h3 className = "webTechTitle"><SettingsOutlinedIcon id = "webTechIconOne"/>
-            Web Technologies
-            <SettingsOutlinedIcon id = "webTechIconTwo"/></h3>
-            </div>
+    render() {
+        return (
 
-            <h5 className = "front"><ImportantDevicesIcon /> Frontend Technologies <ImportantDevicesIcon /></h5>
 
-            <Media className = "media">
- 
-  <Media.Body className = "mediaBody">
-    <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
+            <div className='webTechArea'>
 
-<Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
-  </Media.Body>
-</Media>
+                <Row>
+
+                    <Col className="webTechTitle">
+
+                        <div className="webTechIcons">
+                            <h3 className="webTechTitle">
+                                <SettingsOutlinedIcon id="webTechIconOne" />
+                                Web Technologies
+                                <SettingsOutlinedIcon id="webTechIconTwo" />
+                            </h3>
+                        </div>
+
+                    </Col>
+                </Row>
+
+
+                <Row className='card-groups'>
+
+
+
+                    {webTechs.map((webTech, index) => {
+                        return <WebTechItems {...webTech} key={index} />
+                    })}
+                </Row>
+
+
+
+
 
 
 
             </div>
-            
+
+
+
+
+
+
         )
     }
 }

@@ -1,201 +1,407 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.background {
+#background-img{
   position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 250px;
-  background-size: 100% 400px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-align:center;
-  margin:auto;
-  padding:0;
-  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover !important;
 }
-.header, .sub-header {
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  font-family: 'Pacifico', cursive;
-  font-size: 1.5rem;
+.navbar-light .navbar-toggler {
+  background-color: orange;
+  margin-top: 5% !important;
+}
+.kachi{
+  font-family: 'Spectral SC', serif;
+  color: Orange;
+  font-size: 1.8rem;
   font-weight: bolder;
-  color: white;
-  text-align: center;
+  margin-top: 50%;
 }
-.sub-header{
-  top: 21%;
-  font-size: 1.5rem;
-  font-family: 'Newsreader', serif;
-}
-.nav{
- margin-top: -23%;
- margin-right: 25%;
- width: 50%;
-
-}
-a.btn{
-  position: absolute;
-  top: 31%;
-  left: 33%;
-  background-color: #fff;
-  color: #ff3f57;
-  font-family: 'Texturina', serif;
-  font-weight: bolder;
-  font-size: 1.2rem;
-  border-radius: 5px;
-
-}
-
-.logo{
+#image {
   position: relative;
-  top: 55px;
-  left: 125px;
-  width: 90%;
-  height: 190px;
-  background-size: 50% 150px;
-  background-repeat: no-repeat;
+  z-index: 1;
+  border-radius: 100%;
+  background-color: orange;
+  margin-top: 5%;
+  border: 5px solid blue;
 }
-.MuiButton-label span {
-  color: white;
-  position: absolute;
-  display: none;
-}
-.MuiButton-label:after {
-  color: white;
-  position: absolute;
-  content: 'CoderKachi';
-  left: 20%;
-  font-family: 'Texturina', serif; 
-  font-size: 1.5rem ;
-  font-weight: bolder;
-  color: #fff
-}
-.my-details, .drawer-list{
-  background-color: #fff;
-}
-.my-details{
-  color: #fff;
-  background-color: #ff3f57;
-  text-align: center;
+.main-greet, .sub-greet, .header, .sub-header, .sub-header-two{
+  position: relative;
+  z-index: 1;
   font-family: 'Texturina', serif;
-  font-size: 1.5rem;
+  font-size: 15rem;
+  color: orange;
+  padding-left: 20%;
 }
-#divider{
-  color: #ff3f57;
-  background-color: #ff3f57;
+.main-greet{
+  margin-top: 15%;
 }
-.link-two{
-  text-decoration: none;
-  color: #ff3f57;
-  font-family: 'Texturina', serif; 
-  font-weight: 900;
+.sub-greet{
+  color: Orange;
+  font-family: 'Dancing Script', cursive;
+}
+.header{
+  color: whitesmoke;
+  font-family: 'Newsreader', serif;
+  
+  
+}
+.sub-header, .sub-header-two{
+  font-family: 'Newsreader', serif;
+  font-family: 'Italiana', serif;
+  display: inline;
+  color: orange;
 }
 
-/*----------------------------------------- About Section----------------------------------------------*/
+.sub-header-two {
+  color: orangered;
+  font-size: 2.4rem !important;
+  padding-left: 0;
+}
 
-.about{
-  position: absolute;
-  top: 40%;
-  width: 100%;
+.button-one{
+  position: relative;
+  font-family: 'Newsreader', serif; 
+  border: 2px 2px solid !important;
+  font-size: 20px !important;
+  z-index: 1;
+  margin-top: -20%;
+  color: black;
+  margin-left: 40% !important;
+}
+
+.top{
+  width: 100% !important;
+  margin-top: 10%;
+}
+body .container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.offcanvas-header{
+  background-color: black;
+  color: orange !important;
+  font-family: 'Spectral SC', serif;
+  
+}
+button.btn-close {
+  background-color: orange !important;
+}
+.nav-link{
+  color: black !important;
+  background-color: orange;
+  font-family: 'Newsreader', serif;
   font-size: 1.2rem;
-  font-family: 'Texturina', serif;
-  font-weight: 600;
 }
-#about-img{
-  width: 25%;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px double black;
-  position: absolute;
-  left: 73%;
-  bottom: 75%;
+.rule{
+  border: 2px solid black;
 }
-#info {
-  color: #ff3f57;
-  font-size: 5rem;
-  width: 50%;
+
+
+
+
+
+
+/*---------------------------------------About Me Section-------------------------------------*/
+
+#info{
+  position: relative;
+  color: orange;
+  font-size: 7rem;
+  width: 100%;
+  margin-top: 5%;
+  
 }
-#about-text{
-  color: #ff3f57;
-  background-color: white;
-  position: absolute;
-  top: 37%;
-  left: 20%;
+.info {
+  text-align: center;
+}
+#about-title {
+  position: relative;
   font-family: 'Goblin One', cursive;
+  font-size: 2.5rem;
+}
+#about-words{
+  position: absolute;
+  font-family: 'Texturina', serif;
+  font-size: 2rem;
+  width: 90%;
+  z-index: 1;
+  text-align: center;
+  padding-left: 5%;
 
 }
-td{
-  background-color: white;
-  border: none;
+.bulb-1, .bulb-2, .bulb-3, .bulb-4{
+  position: relative;
+  font-size: 0.6rem;
+  z-index: -1;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-#about-words {
-  position: absolute;
-  top: 55%;
-  left: 2%;
-  color: #ff3f57;
+.bulb-2, .bulb-4{
+  text-align: right !important;
+  margin-left: -5%;
+  margin-right: 5%;
+}
+
+
+/*--------------------------WEB TECHNOLOGIES-------------------------------*/
+
+.webTechArea{
+  position: relative;
+  margin-top: 5%;
+  
+}
+
+.webTechTitle {
+  position: relative;
+  background-color: black;
+  color: orange;
+  font-size: 3rem;
   text-align: center;
   font-family: 'Newsreader', serif;
   font-weight: bolder;
-  line-height: 1.5;
-  width: 95%;
+  margin-top: 1%;                                                                                                                                                                     
 }
 
-/*-------------------------------------Web Technology Section-------------------------------------*/
-
-.webTechIcons, .front{
-  position: absolute;
-  bottom: 15%;
-  color: #fff;
-  width: 100%;
-  background-color: #ff3f57;
-}
-#webTechIconOne, #webTechIconTwo, .webTechTitle{
-  position: absolute;
-  font-size: 1.7rem;
-  
+#webTechIconOne,#webTechIconTwo{
+  font-size: 4rem;
+  color: orange;
 
 }
-#webTechIconOne{
-    right: 90%;
-    top: 55%;
+
+.cards{
+ margin-top: 15%;
+ margin-left: 5%;
 }
-#webTechIconTwo{
-  right: 1%;
-  top: 55%;
+.card-body{
+  height: 5% !important;
 }
-.webTechTitle, .front{
-  background-color: #ff3f57;
-  width: 100%;
+
+#card-img{
+  height: 50%;
+  border: 5px solid orange;
+}
+
+.card-groups{
+  background-color: lightgrey;
+  padding-bottom: 5%;
+}
+
+
+
+
+/*------------------------------------Conctact Me ---------------------------------*/
+
+.contactMe{
+  width: 100vw;
+  height: 6rem;
+  font-size: 3rem !important;
+  font-family: 'Texturina', serif;
+}
+
+
+
+
+
+/*-------------------------------------------Footer--------------------------------------*/
+
+.footDiv{
+  background-color: #000;
+  width: 100vw;
+  height: 30rem;
   text-align: center;
-  font-family: 'Goblin One', cursive;
 }
-.front{
-  top: 97%;
-  z-index: 2;
-  color: #ff3f57;
-  font-size: 1rem;
-  text-decoration: underline;
+.footOne, .footFace, .footThree{
+  position: relative;
+  font-size: 2rem;
+  color: whitesmoke;
+  font-family: 'Texturina', serif; 
+  width: 90%;
+  margin-left: 4%;
+  padding-top: 6%;
+  
 }
-.media{
-  position: absolute;
-  top: 120%;
-  background-color: #ff3f57;
+.footFace, .footThree{
+  padding-top: 0%;
+  font-size: 3rem;
+}
+#what, #face{
+  color: green;
+  font-size: 4rem;
+  padding-left: 2%;
+}
+#face{
+  color: blue;
 }
 
-.mediaBody{
-  color: #fff;
+.footThree{
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
-hr{
-  color: #fff;
+
+
+
+
+
+/*-----------------------------------Small Devices-----------------------------------------*/
+@media only screen and (Max-width: 411px){
+  .button-one {
+    margin: 5% 0% 0% 34% !important ;
+  }
+  .main-greet, .sub-greet, .header, .sub-header, .sub-header-two{
+    font-size: 5rem !important;
+  }
+  .sub-header-two{
+    font-size: 1.7rem !important;
+    padding-left: 0;
+  }
+
+
+  /*-------------------------About Me Small Devices-------------------------------*/
+
+  #about-words{
+    font-size: 1.5rem;
+  
+  }
+
+  /*------------------------------WebTech Area Small Devices--------------------*/
+
+  .webTechTitle {
+    font-size: 2rem;                                                                                                                                                                   
+  }
+  
+  #webTechIconOne,#webTechIconTwo{
+    font-size: 3rem;
+  }
+  .cards{
+    margin-left: 10%;
+   }
+
+   .card-body{
+    height: 10rem !important;
+  }
+
+
+  /*------------------------------------Conctact Me Small Devices---------------------------------*/
+
+.contactMe{
+  width: 100vw;
+  height: 5rem;
+  font-size: 2rem !important;
+  font-family: 'Texturina', serif;
 }
+
+
+/*--------------------------------------Footer Small Devices----------------------------------*/
+
+.footOne, .footFace, .footThree{
+  font-size: 1.4rem;
+}
+
+
+  
+  
+}
+
+
+
+
+
+
+/*------------------------------------Extra Small devices ----------------------------------*/
+
+@media only screen and (Max-width: 600px){
+
+  .navbar-light .navbar-toggler {
+    margin-right: 5%;
+  }
+  #image {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .button-one {
+    margin: 5% 0% 0% 32% !important ;
+  }
+  .main-greet, .sub-greet, .header, .sub-header, .sub-header-two{
+    padding-left: 10%;
+    font-size: 2rem !important;
+  }
+  .sub-header, .sub-header-two{
+    font-size: 1.5rem !important;
+  }
+  .sub-header-two{
+    padding: 0%;
+  }
+
+
+  /*-------------------------About Me Extra Small Devices-------------------------------*/
+
+  #about-words{
+    font-size: 1.5rem;
+  
+  }
+
+  /*------------------------------WebTech Area Extra Small Devices--------------------*/
+
+  .webTechTitle {
+    font-size: 2rem;                                                                                                                                                                   
+  }
+  
+  #webTechIconOne,#webTechIconTwo{
+    font-size: 3rem;
+  }
+  .cards{
+    margin-left: 10%;
+   }
+
+   .card-body{
+    height: 10rem !important;
+  }
+
+
+  /*------------------------------------Conctact Me Extra Small Devices---------------------------------*/
+
+.contactMe{
+  width: 100vw;
+  height: 5rem;
+  font-size: 2rem !important;
+  font-family: 'Texturina', serif;
+}
+
+
+/*--------------------------------------Footer Extra Small Devices----------------------------------*/
+
+.footOne, .footFace, .footThree{
+  font-size: 1.4rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* font-family: 'Dancing Script', cursive;
@@ -204,3 +410,8 @@ font-family: 'Newsreader', serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Texturina', serif; 
 */
+
+/* font-family: 'Italiana', serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Sigmar One', cursive;
+font-family: 'Spectral SC', serif;  */
