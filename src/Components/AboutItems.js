@@ -25,7 +25,7 @@ class AboutItems extends Component {
 
                      {/* About me Write-up */}
 
-                     <Col>
+                     <Col lg = {12}>
                     
                     <div id="about-words">
                         <b>{this.props.aboutWriteUp}</b>

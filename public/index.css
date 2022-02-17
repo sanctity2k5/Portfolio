@@ -1,8 +1,11 @@
+.main-body{
+  overflow-x: hidden;
+}
+
 #background-img{
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-size: cover !important;
 }
 .navbar-light .navbar-toggler {
   background-color: orange;
@@ -134,20 +137,20 @@ button.btn-close {
   font-size: 0.6rem;
   z-index: -1;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 .bulb-2, .bulb-4{
   text-align: right !important;
-  margin-left: -5%;
-  margin-right: 5%;
+  margin-left: -10% !important;
+  margin-right: 10% !important;
 }
 
 
-/*--------------------------WEB TECHNOLOGIES-------------------------------*/
-
+/*---------------------------------------WEB TECHNOLOGIES-------------------------------------------------*/
+ 
 .webTechArea{
   position: relative;
-  margin-top: 5%;
+  margin-top: 20%;
   
 }
 
@@ -184,7 +187,7 @@ button.btn-close {
 .card-groups{
   background-color: lightgrey;
   padding-bottom: 5%;
-}
+} 
 
 
 
@@ -242,18 +245,116 @@ button.btn-close {
 
 
 
-/*-----------------------------------Small Devices-----------------------------------------*/
-@media only screen and (Max-width: 411px){
+/*------------------------------------Extra Small devices ----------------------------------*/
+
+@media only screen and (Max-width: 600px){
+
+  .main-body{
+    overflow-x: hidden;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .navbar-light .navbar-toggler {
+    margin-right: 2% !important;
+  }
+  #image {
+    width: 90%;
+    margin-left: 4%;
+  }
   .button-one {
-    margin: 5% 0% 0% 34% !important ;
+    margin: 5% 0% 0% 32% !important ;
   }
   .main-greet, .sub-greet, .header, .sub-header, .sub-header-two{
-    font-size: 5rem !important;
+    padding-left: 10%;
+    font-size: 2.5rem !important;
+  }
+  .sub-header, .sub-header-two{
+    font-size: 1.5rem !important;
+  }
+  .sub-header-two{
+    padding: 0%;
+  }
+  #background-img{
+    height: 111vh;
+  }
+
+
+  /*-------------------------About Me Extra Small Devices-------------------------------*/
+
+  #info {
+    font-size: 5rem;
+    margin-top: 10%;
+}
+  #about-words{
+    font-size: 1.1rem;
+    width: 95%;
+  }
+
+  /*------------------------------WebTech Area Extra Small Devices--------------------*/
+
+  .webTechTitle {
+    font-size: 2rem; 
+    margin-top: 5%                                                                                                                                                                 
+  }
+  
+  #webTechIconOne,#webTechIconTwo{
+    font-size: 3rem;
+  }
+  .cards{
+    margin-left: 10%;
+   }
+
+   .card-body{
+    height: 10rem !important;
+  }
+
+
+  /*------------------------------------Conctact Me Extra Small Devices---------------------------------*/
+
+.contactMe{
+  width: 100vw;
+  height: 5rem;
+  font-size: 2rem !important;
+  font-family: 'Texturina', serif;
+}
+
+
+/*--------------------------------------Footer Extra Small Devices----------------------------------*/
+
+.footOne, .footFace, .footThree{
+  font-size: 1.4rem;
+}
+
+}
+
+
+
+
+/*-----------------------------------Small Devices-----------------------------------------*/
+@media only screen and (Max-width: 823px){
+
+  .kachi{
+    font-size: 1.3rem;
+  }
+  /* .navbar-light .navbar-toggler {
+    margin-right: 13% !important;
+  } */
+  /* .button-one {
+    margin: 5% 0% 0% 34% !important ;
+  } */
+  /* .main-greet, .sub-greet, .header, .sub-header, .sub-header-two{
+    font-size: 1.8rem !important;
   }
   .sub-header-two{
     font-size: 1.7rem !important;
     padding-left: 0;
-  }
+  } */
+
+  #image {
+    width: 88%;
+    margin-left: 5%;
+}
 
 
   /*-------------------------About Me Small Devices-------------------------------*/
@@ -305,76 +406,6 @@ button.btn-close {
 
 
 
-
-
-/*------------------------------------Extra Small devices ----------------------------------*/
-
-@media only screen and (Max-width: 600px){
-
-  .navbar-light .navbar-toggler {
-    margin-right: 5%;
-  }
-  #image {
-    width: 90%;
-    margin-left: 5%;
-  }
-  .button-one {
-    margin: 5% 0% 0% 32% !important ;
-  }
-  .main-greet, .sub-greet, .header, .sub-header, .sub-header-two{
-    padding-left: 10%;
-    font-size: 2rem !important;
-  }
-  .sub-header, .sub-header-two{
-    font-size: 1.5rem !important;
-  }
-  .sub-header-two{
-    padding: 0%;
-  }
-
-
-  /*-------------------------About Me Extra Small Devices-------------------------------*/
-
-  #about-words{
-    font-size: 1.5rem;
-  
-  }
-
-  /*------------------------------WebTech Area Extra Small Devices--------------------*/
-
-  .webTechTitle {
-    font-size: 2rem;                                                                                                                                                                   
-  }
-  
-  #webTechIconOne,#webTechIconTwo{
-    font-size: 3rem;
-  }
-  .cards{
-    margin-left: 10%;
-   }
-
-   .card-body{
-    height: 10rem !important;
-  }
-
-
-  /*------------------------------------Conctact Me Extra Small Devices---------------------------------*/
-
-.contactMe{
-  width: 100vw;
-  height: 5rem;
-  font-size: 2rem !important;
-  font-family: 'Texturina', serif;
-}
-
-
-/*--------------------------------------Footer Extra Small Devices----------------------------------*/
-
-.footOne, .footFace, .footThree{
-  font-size: 1.4rem;
-}
-
-}
 
 
 

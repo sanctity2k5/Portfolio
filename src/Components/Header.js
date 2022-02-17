@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import { Animated } from "react-animated-css";
 // import {Link } from "react-router-dom";
-import myPhoto from "../Portfolios/background-cut.png"
+
 import { Image } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -26,9 +26,9 @@ class Header extends Component {
                     </Col>
 
 
-                    <Col lg={6} className="my-photo">
-                        <Animated animationIn="wobble" animationOut="fadeOut" isVisible={true}>
-                            <Image src={myPhoto} alt="Kachi's image" id="image" fluid />
+                    <Col  className="my-photo">
+                        <Animated animationIn="wobble" animationOut="fadeOut" isVisible={this.props.visible}>
+                            <Image src={this.props.myPhoto} alt="Kachi's image" id="image" fluid />
 
                         </Animated>
 

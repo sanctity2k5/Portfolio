@@ -9,6 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Animated } from "react-animated-css";
+import {Link} from "react-router-dom";
 
 class NavItems extends Component {
   render() {
@@ -30,7 +31,7 @@ class NavItems extends Component {
         <Nav.Link className="nav-link"  ><InfoIcon /> About Me</Nav.Link>
         <Nav.Link className="nav-link"  ><PhoneAndroidIcon /> Contact Me</Nav.Link>
         <Nav.Link className="nav-link"  ><DevicesIcon /> Web Technologies</Nav.Link>
-        <Nav.Link className="nav-link"  ><MenuBookIcon />  My Diary</Nav.Link>
+        <Nav.Link className="nav-link"  ><MenuBookIcon /> <Link to ={"/diary"}> My Diary </Link></Nav.Link>
         <Nav.Link className="nav-link"  ><LockIcon /> My CV</Nav.Link>
         <hr className = "rule"/> 
 

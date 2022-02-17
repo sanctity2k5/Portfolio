@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Img from '../Portfolios/background2.jpg';
 import { Image } from "react-bootstrap";
+import myPhoto from "../Portfolios/background-cut.png";
 
 //Components
 
@@ -12,13 +13,13 @@ import ContactMe from "../Components/ContactUsComponent";
 import Footer from '../Components/Footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import image from '../Portfolios/Kachi-logo.jpg';
 
 class Home extends Component {
   render() {
     return (
+      <div className = "main-body">
       <Container fluid>
 
 
@@ -30,8 +31,8 @@ class Home extends Component {
           </Row>
 
 
-          <Row>
-          <Col>
+         
+          
             <Image
 
               src={Img}
@@ -39,8 +40,7 @@ class Home extends Component {
               id="background-img"
 
             />
-            </Col>
-            </Row>
+           
   
 
 
@@ -56,6 +56,7 @@ class Home extends Component {
               title="Anyadi Onyekachukwu"
               subtitle="Frontend Web"
               subtitleDev=" Developer"
+              myPhoto={myPhoto}
             />
 
           </div>
@@ -83,7 +84,7 @@ class Home extends Component {
       
 
       </Container>
-
+</div>
     )
   }
 }

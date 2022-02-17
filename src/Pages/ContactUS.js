@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../PageCss/ContactPage.css';
 
 class CommentItems extends Component {
     render() {
