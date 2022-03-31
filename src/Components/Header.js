@@ -16,11 +16,14 @@ class Header extends Component {
 
                     <Col lg={6}>
                         <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
-                            <div className="main-greet display-3"><b>{this.props.mainGreet}</b></div>
+                            <div className= "main-greet display-3 "><b>{this.props.mainGreet}</b></div>
                             <div className="sub-greet display-3">{this.props.subGreet}</div>
                             <div className="header display-3"><b>{this.props.title}</b></div>
                             <div className="sub-header display-6">{this.props.subtitle}</div>
                             <div className="sub-header-two display-6">{this.props.subtitleDev}</div>
+                            <div className= "cv-title"><b>{this.props.cvTitle}</b></div>
+                            <div className= "cv-email"><b>{this.props.cvEmail}</b></div>
+                            <div className= "cv-tel"><b>{this.props.cvTel}</b></div>
                             
                         </Animated>
                     </Col>
@@ -28,7 +31,7 @@ class Header extends Component {
 
                     <Col  className="my-photo">
                         <Animated animationIn="wobble" animationOut="fadeOut" isVisible={this.props.visible}>
-                            <Image src={this.props.myPhoto} alt="Kachi's image" id="image" fluid />
+                            <Image src={this.props.myPhoto} alt="Kachi's image" id={this.props.id} fluid />
 
                         </Animated>
 
@@ -38,7 +41,7 @@ class Header extends Component {
                 <Row>
                 <Col lg = {3} className = "btn-1">
                 <Animated animationIn="flash" animationOut="fadeOut" isVisible={true}>
-                    <Button className={this.props.cname} variant={this.props.variant}>{this.props.buttonText}</Button>
+                    <Button className={this.props.cname} variant={this.props.variant} showButton={this.props.showButton}>{this.props.buttonText}</Button>
                 </Animated>
                     </Col>
                 </Row>

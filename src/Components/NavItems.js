@@ -32,7 +32,7 @@ class NavItems extends Component {
         <Nav.Link className="nav-link"  ><PhoneAndroidIcon /> Contact Me</Nav.Link>
         <Nav.Link className="nav-link"  ><DevicesIcon /> Web Technologies</Nav.Link>
         <Nav.Link className="nav-link"  ><MenuBookIcon /> <Link to ={"/diary"}> My Diary </Link></Nav.Link>
-        <Nav.Link className="nav-link"  ><LockIcon /> My CV</Nav.Link>
+        <Nav.Link className="nav-link"  ><LockIcon /><Link to ={"/cv"}>  My CV </Link></Nav.Link>
         <hr className = "rule"/> 
 
 

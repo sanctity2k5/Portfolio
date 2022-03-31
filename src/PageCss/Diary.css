@@ -1,6 +1,100 @@
+#diary-image{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    border-radius: 10%;
+}
+
 .diary-main{
     width: 50%;
     height: 550px;
-    color: green;
-    background-color: hotpink;
 }
+.date{
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    background-color: orange;
+}
+.imgOne{
+    position: relative;
+    text-align: center;
+}
+#imgOne{
+    border-radius: 5px;
+}
+
+.actText{
+    position: relative;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 3%;
+    font-family: 'Newsreader', serif;
+    line-height: 3rem;
+    font-weight: bolder;
+}
+.vid{
+    position: relative;
+    text-align: center;
+}
+.vidTitle{
+    position: relative;
+    background-color: #000;
+    color: orange;
+}
+#img{
+    position: relative;
+    padding-left: 10%;
+    border-radius: 5px;
+}
+
+.pagination{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Goblin One', cursive;
+font-family: 'Newsreader', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Texturina', serif; 
+*/
+
+/* font-family: 'Italiana', serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Sigmar One', cursive;
+font-family: 'Spectral SC', serif;  */

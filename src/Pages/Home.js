@@ -57,6 +57,7 @@ class Home extends Component {
               subtitle="Frontend Web"
               subtitleDev=" Developer"
               myPhoto={myPhoto}
+              id = "image"
             />
 
           </div>
